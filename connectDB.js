@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 
 const connectDatabase = async()=>{
     try {
-        const db = await mongoose.connect("mongodb+srv://malik:KcaHfW7SqU9LznoV@cluster0.dxk5es2.mongodb.net/ecommerce");
+        const db = await mongoose.connect("mongodb+srv://malik:KcaHfW7SqU9LznoV@cluster0.dxk5es2.mongodb.net/backend");
         console.log("mongodb working!");
     } catch (error) {
         console.log(error)
