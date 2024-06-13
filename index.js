@@ -1,7 +1,11 @@
 import express from "express";
 import router from "./router.js";
+import connectDatabase from "./connectDB.js";
+
+connectDatabase();
 
 const app = express();
+
 
 app.get("/", (req, res)=>{
     res.json({message: "home page"})
