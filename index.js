@@ -2,6 +2,9 @@ import express from "express";
 import router from "./router.js";
 import connectDatabase from "./connectDB.js";
 import morgan from "morgan";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 
 const app = express();
